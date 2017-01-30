@@ -7,14 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B7AB086862E7BE36857745A /* Pods_One_Night_Movie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD1B3EB1361FE23FC8B0796C /* Pods_One_Night_Movie.framework */; };
+		F49FB6181E3290D8009A4170 /* lineto-circular-pro-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F49FB6131E3290D8009A4170 /* lineto-circular-pro-bold.ttf */; };
+		F49FB6191E3290D8009A4170 /* lineto-circular-pro-book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F49FB6141E3290D8009A4170 /* lineto-circular-pro-book.ttf */; };
+		F49FB61A1E3290D8009A4170 /* lineto-circular-pro-bookItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F49FB6151E3290D8009A4170 /* lineto-circular-pro-bookItalic.ttf */; };
+		F49FB61B1E3290D8009A4170 /* lineto-circular-pro-medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F49FB6161E3290D8009A4170 /* lineto-circular-pro-medium.ttf */; };
+		F49FB61C1E3290D8009A4170 /* lineto-circular-pro-mediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F49FB6171E3290D8009A4170 /* lineto-circular-pro-mediumItalic.ttf */; };
+		F49FB6221E379D47009A4170 /* GenresCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49FB6211E379D47009A4170 /* GenresCell.swift */; };
+		F49FB6241E37CB15009A4170 /* featureAppsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49FB6231E37CB15009A4170 /* featureAppsController.swift */; };
 		F4CE4C901E27B1B70017D7B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CE4C8F1E27B1B70017D7B5 /* AppDelegate.swift */; };
 		F4CE4C921E27B1B70017D7B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CE4C911E27B1B70017D7B5 /* ViewController.swift */; };
 		F4CE4C951E27B1B70017D7B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4CE4C931E27B1B70017D7B5 /* Main.storyboard */; };
 		F4CE4C971E27B1B70017D7B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4CE4C961E27B1B70017D7B5 /* Assets.xcassets */; };
 		F4CE4C9A1E27B1B70017D7B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4CE4C981E27B1B70017D7B5 /* LaunchScreen.storyboard */; };
+		F4D4AF001E3FB33100353FDB /* Genres.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D4AEFF1E3FB33100353FDB /* Genres.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		945C57F0AFB2030F8C700592 /* Pods-One Night Movie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-One Night Movie.release.xcconfig"; path = "Pods/Target Support Files/Pods-One Night Movie/Pods-One Night Movie.release.xcconfig"; sourceTree = "<group>"; };
+		AD1B3EB1361FE23FC8B0796C /* Pods_One_Night_Movie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_One_Night_Movie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC5AD5F925CEAB29E575570A /* Pods-One Night Movie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-One Night Movie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-One Night Movie/Pods-One Night Movie.debug.xcconfig"; sourceTree = "<group>"; };
+		F49FB6131E3290D8009A4170 /* lineto-circular-pro-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "lineto-circular-pro-bold.ttf"; path = "../../Desktop/lineto-circular-pro-bold.ttf"; sourceTree = "<group>"; };
+		F49FB6141E3290D8009A4170 /* lineto-circular-pro-book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "lineto-circular-pro-book.ttf"; path = "../../Desktop/lineto-circular-pro-book.ttf"; sourceTree = "<group>"; };
+		F49FB6151E3290D8009A4170 /* lineto-circular-pro-bookItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "lineto-circular-pro-bookItalic.ttf"; path = "../../Desktop/lineto-circular-pro-bookItalic.ttf"; sourceTree = "<group>"; };
+		F49FB6161E3290D8009A4170 /* lineto-circular-pro-medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "lineto-circular-pro-medium.ttf"; path = "../../Desktop/lineto-circular-pro-medium.ttf"; sourceTree = "<group>"; };
+		F49FB6171E3290D8009A4170 /* lineto-circular-pro-mediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "lineto-circular-pro-mediumItalic.ttf"; path = "../../Desktop/lineto-circular-pro-mediumItalic.ttf"; sourceTree = "<group>"; };
+		F49FB6211E379D47009A4170 /* GenresCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenresCell.swift; sourceTree = "<group>"; };
+		F49FB6231E37CB15009A4170 /* featureAppsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = featureAppsController.swift; sourceTree = "<group>"; };
 		F4CE4C8C1E27B1B70017D7B5 /* One Night Movie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "One Night Movie.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4CE4C8F1E27B1B70017D7B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4CE4C911E27B1B70017D7B5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +41,7 @@
 		F4CE4C961E27B1B70017D7B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4CE4C991E27B1B70017D7B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4CE4C9B1E27B1B70017D7B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4D4AEFF1E3FB33100353FDB /* Genres.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Genres.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +49,50 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B7AB086862E7BE36857745A /* Pods_One_Night_Movie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5328A5491628D56369725D43 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD1B3EB1361FE23FC8B0796C /* Pods_One_Night_Movie.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		94BE76E20433104038D15E26 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EC5AD5F925CEAB29E575570A /* Pods-One Night Movie.debug.xcconfig */,
+				945C57F0AFB2030F8C700592 /* Pods-One Night Movie.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F49FB6121E32901C009A4170 /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				F49FB6131E3290D8009A4170 /* lineto-circular-pro-bold.ttf */,
+				F49FB6141E3290D8009A4170 /* lineto-circular-pro-book.ttf */,
+				F49FB6151E3290D8009A4170 /* lineto-circular-pro-bookItalic.ttf */,
+				F49FB6161E3290D8009A4170 /* lineto-circular-pro-medium.ttf */,
+				F49FB6171E3290D8009A4170 /* lineto-circular-pro-mediumItalic.ttf */,
+			);
+			name = Ressources;
+			sourceTree = "<group>";
+		};
 		F4CE4C831E27B1B70017D7B5 = {
 			isa = PBXGroup;
 			children = (
+				F49FB6121E32901C009A4170 /* Ressources */,
 				F4CE4C8E1E27B1B70017D7B5 /* One Night Movie */,
 				F4CE4C8D1E27B1B70017D7B5 /* Products */,
+				94BE76E20433104038D15E26 /* Pods */,
+				5328A5491628D56369725D43 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +113,9 @@
 				F4CE4C961E27B1B70017D7B5 /* Assets.xcassets */,
 				F4CE4C981E27B1B70017D7B5 /* LaunchScreen.storyboard */,
 				F4CE4C9B1E27B1B70017D7B5 /* Info.plist */,
+				F49FB6211E379D47009A4170 /* GenresCell.swift */,
+				F49FB6231E37CB15009A4170 /* featureAppsController.swift */,
+				F4D4AEFF1E3FB33100353FDB /* Genres.swift */,
 			);
 			path = "One Night Movie";
 			sourceTree = "<group>";
@@ -71,9 +127,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4CE4C9E1E27B1B70017D7B5 /* Build configuration list for PBXNativeTarget "One Night Movie" */;
 			buildPhases = (
+				5B30639DAC086D801D7FC811 /* [CP] Check Pods Manifest.lock */,
 				F4CE4C881E27B1B70017D7B5 /* Sources */,
 				F4CE4C891E27B1B70017D7B5 /* Frameworks */,
 				F4CE4C8A1E27B1B70017D7B5 /* Resources */,
+				C7C6B44B4868E72C1FE89387 /* [CP] Embed Pods Frameworks */,
+				6876B933BC21497EC8FB7CEE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,13 +183,66 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F49FB6191E3290D8009A4170 /* lineto-circular-pro-book.ttf in Resources */,
 				F4CE4C9A1E27B1B70017D7B5 /* LaunchScreen.storyboard in Resources */,
+				F49FB6181E3290D8009A4170 /* lineto-circular-pro-bold.ttf in Resources */,
+				F49FB61A1E3290D8009A4170 /* lineto-circular-pro-bookItalic.ttf in Resources */,
 				F4CE4C971E27B1B70017D7B5 /* Assets.xcassets in Resources */,
 				F4CE4C951E27B1B70017D7B5 /* Main.storyboard in Resources */,
+				F49FB61B1E3290D8009A4170 /* lineto-circular-pro-medium.ttf in Resources */,
+				F49FB61C1E3290D8009A4170 /* lineto-circular-pro-mediumItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5B30639DAC086D801D7FC811 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6876B933BC21497EC8FB7CEE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-One Night Movie/Pods-One Night Movie-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7C6B44B4868E72C1FE89387 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-One Night Movie/Pods-One Night Movie-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F4CE4C881E27B1B70017D7B5 /* Sources */ = {
@@ -138,7 +250,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4CE4C921E27B1B70017D7B5 /* ViewController.swift in Sources */,
+				F4D4AF001E3FB33100353FDB /* Genres.swift in Sources */,
 				F4CE4C901E27B1B70017D7B5 /* AppDelegate.swift in Sources */,
+				F49FB6241E37CB15009A4170 /* featureAppsController.swift in Sources */,
+				F49FB6221E379D47009A4170 /* GenresCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +282,7 @@
 		F4CE4C9C1E27B1B70017D7B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -187,7 +303,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -207,6 +323,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				"OTHER_LDFLAGS[arch=*]" = "$(inherited)";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -217,6 +334,7 @@
 		F4CE4C9D1E27B1B70017D7B5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -250,6 +368,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				"OTHER_LDFLAGS[arch=*]" = "$(inherited)";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -259,7 +378,9 @@
 		};
 		F4CE4C9F1E27B1B70017D7B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC5AD5F925CEAB29E575570A /* Pods-One Night Movie.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = H678JBA44N;
 				INFOPLIST_FILE = "One Night Movie/Info.plist";
@@ -272,7 +393,9 @@
 		};
 		F4CE4CA01E27B1B70017D7B5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 945C57F0AFB2030F8C700592 /* Pods-One Night Movie.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = H678JBA44N;
 				INFOPLIST_FILE = "One Night Movie/Info.plist";
@@ -302,6 +425,7 @@
 				F4CE4CA01E27B1B70017D7B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

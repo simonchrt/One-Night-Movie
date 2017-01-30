@@ -18,6 +18,19 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>lineto-circular-pro-bold.ttf</string>
+		<string>lineto-circular-pro-book.ttf</string>
+		<string>lineto-circular-pro-bookitalik.ttf</string>
+		<string>lineto-circular-pro-medium.ttf</string>
+		<string>lineto-circular-pro-mediumitalic.ttf</string>
+	</array>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>

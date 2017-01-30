@@ -1,14 +1,23 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="lineto-circular-pro-bold.ttf">
+            <string>Circular-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Title-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="One_Night_Movie" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +25,85 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZWB-MJ-ZD1">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="67"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B8V-ya-xGj">
+                                        <rect key="frame" x="90" y="32" width="68" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="68" id="aXo-cr-XPP"/>
+                                            <constraint firstAttribute="height" constant="25" id="hnA-ft-ghy"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Circular-Bold" family="Circular" pointSize="17"/>
+                                        <state key="normal" title="Movies">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zg8-vz-7pt">
+                                        <rect key="frame" x="204" y="32" width="93" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="XyE-Hi-QiT"/>
+                                            <constraint firstAttribute="width" constant="93" id="mHz-nW-zsp"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Circular-Bold" family="Circular" pointSize="17"/>
+                                        <state key="normal" title="TV Shows">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.30105757713317871" green="0.36461299657821655" blue="0.87668579816818237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="B8V-ya-xGj" firstAttribute="top" secondItem="ZWB-MJ-ZD1" secondAttribute="top" constant="32" id="AM8-vV-blq"/>
+                                    <constraint firstItem="Zg8-vz-7pt" firstAttribute="top" secondItem="ZWB-MJ-ZD1" secondAttribute="top" constant="32" id="EWS-WA-Xyg"/>
+                                    <constraint firstItem="B8V-ya-xGj" firstAttribute="leading" secondItem="ZWB-MJ-ZD1" secondAttribute="leading" constant="90" id="dJZ-0r-lCI"/>
+                                    <constraint firstItem="Zg8-vz-7pt" firstAttribute="leading" secondItem="B8V-ya-xGj" secondAttribute="trailing" constant="46" id="u9x-EK-uMM"/>
+                                    <constraint firstAttribute="trailing" secondItem="Zg8-vz-7pt" secondAttribute="trailing" constant="78" id="yiJ-iE-xo4"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" bounces="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="RJO-RD-5nW">
+                                <rect key="frame" x="0.0" y="91" width="375" height="39"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ZnI-ON-v1v">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="9Xg-nW-Olh">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.15912562608718872" green="0.19500273466110229" blue="0.47183716297149658" alpha="0.90935359589041098" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="RJO-RD-5nW" firstAttribute="top" secondItem="ZWB-MJ-ZD1" secondAttribute="bottom" constant="24" id="XhD-cQ-5bt"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="RJO-RD-5nW" secondAttribute="bottom" constant="537" id="Z1q-td-5f9"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ZWB-MJ-ZD1" secondAttribute="bottom" constant="600" id="h1p-rZ-OJf"/>
+                            <constraint firstItem="RJO-RD-5nW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hec-lv-pVc"/>
+                            <constraint firstItem="ZWB-MJ-ZD1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="lOm-8d-4qt"/>
+                            <constraint firstItem="ZWB-MJ-ZD1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="rPL-FM-qd6"/>
+                            <constraint firstAttribute="trailing" secondItem="RJO-RD-5nW" secondAttribute="trailing" id="wM1-pl-n5N"/>
+                            <constraint firstAttribute="trailing" secondItem="ZWB-MJ-ZD1" secondAttribute="trailing" id="yCR-6t-cNg"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="movie" id="lAQ-jf-hJe"/>
+                    <navigationItem key="navigationItem" title="Title" id="BXG-fP-Wpx"/>
+                    <connections>
+                        <outlet property="collectionViewGenres" destination="RJO-RD-5nW" id="owp-EO-l2M"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-4302" y="181"/>
         </scene>
     </scenes>
 </document>

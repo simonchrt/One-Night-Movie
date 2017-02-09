@@ -1,8 +1,8 @@
 //
-//  GenresCell.swift
+//  SeriesViewController.swift
 //  One Night Movie
 //
-//  Created by Simon Chrétien on 09/02/2017.
+//  Created by Simon Chrétien on 05/02/2017.
 //  Copyright © 2017 Simon Chrétien. All rights reserved.
 //
 

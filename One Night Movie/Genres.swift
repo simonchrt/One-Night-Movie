@@ -12,6 +12,7 @@ import SwiftyJSON
 class Genres {
     var id:Int
     var name:String
+    var button:UIButton?
     
     init?(fromData genresData:[String:AnyObject]) {
         guard let id = genresData["id"] as? Int,

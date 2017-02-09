@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		4B7AB086862E7BE36857745A /* Pods_One_Night_Movie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD1B3EB1361FE23FC8B0796C /* Pods_One_Night_Movie.framework */; };
+		F4941D871E40A4BD00C3B8B0 /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4941D861E40A4BD00C3B8B0 /* Movies.swift */; };
 		F49FB6181E3290D8009A4170 /* lineto-circular-pro-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F49FB6131E3290D8009A4170 /* lineto-circular-pro-bold.ttf */; };
 		F49FB6191E3290D8009A4170 /* lineto-circular-pro-book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F49FB6141E3290D8009A4170 /* lineto-circular-pro-book.ttf */; };
 		F49FB61A1E3290D8009A4170 /* lineto-circular-pro-bookItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F49FB6151E3290D8009A4170 /* lineto-circular-pro-bookItalic.ttf */; };
 		F49FB61B1E3290D8009A4170 /* lineto-circular-pro-medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F49FB6161E3290D8009A4170 /* lineto-circular-pro-medium.ttf */; };
 		F49FB61C1E3290D8009A4170 /* lineto-circular-pro-mediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F49FB6171E3290D8009A4170 /* lineto-circular-pro-mediumItalic.ttf */; };
-		F49FB6221E379D47009A4170 /* GenresCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49FB6211E379D47009A4170 /* GenresCell.swift */; };
-		F49FB6241E37CB15009A4170 /* featureAppsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49FB6231E37CB15009A4170 /* featureAppsController.swift */; };
+		F4C589861E48F62800619A4F /* DetailMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C589851E48F62800619A4F /* DetailMovieViewController.swift */; };
 		F4CE4C901E27B1B70017D7B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CE4C8F1E27B1B70017D7B5 /* AppDelegate.swift */; };
 		F4CE4C921E27B1B70017D7B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CE4C911E27B1B70017D7B5 /* ViewController.swift */; };
 		F4CE4C951E27B1B70017D7B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4CE4C931E27B1B70017D7B5 /* Main.storyboard */; };
@@ -27,13 +27,13 @@
 		945C57F0AFB2030F8C700592 /* Pods-One Night Movie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-One Night Movie.release.xcconfig"; path = "Pods/Target Support Files/Pods-One Night Movie/Pods-One Night Movie.release.xcconfig"; sourceTree = "<group>"; };
 		AD1B3EB1361FE23FC8B0796C /* Pods_One_Night_Movie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_One_Night_Movie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC5AD5F925CEAB29E575570A /* Pods-One Night Movie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-One Night Movie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-One Night Movie/Pods-One Night Movie.debug.xcconfig"; sourceTree = "<group>"; };
+		F4941D861E40A4BD00C3B8B0 /* Movies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
 		F49FB6131E3290D8009A4170 /* lineto-circular-pro-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "lineto-circular-pro-bold.ttf"; path = "../../Desktop/lineto-circular-pro-bold.ttf"; sourceTree = "<group>"; };
 		F49FB6141E3290D8009A4170 /* lineto-circular-pro-book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "lineto-circular-pro-book.ttf"; path = "../../Desktop/lineto-circular-pro-book.ttf"; sourceTree = "<group>"; };
 		F49FB6151E3290D8009A4170 /* lineto-circular-pro-bookItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "lineto-circular-pro-bookItalic.ttf"; path = "../../Desktop/lineto-circular-pro-bookItalic.ttf"; sourceTree = "<group>"; };
 		F49FB6161E3290D8009A4170 /* lineto-circular-pro-medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "lineto-circular-pro-medium.ttf"; path = "../../Desktop/lineto-circular-pro-medium.ttf"; sourceTree = "<group>"; };
 		F49FB6171E3290D8009A4170 /* lineto-circular-pro-mediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "lineto-circular-pro-mediumItalic.ttf"; path = "../../Desktop/lineto-circular-pro-mediumItalic.ttf"; sourceTree = "<group>"; };
-		F49FB6211E379D47009A4170 /* GenresCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenresCell.swift; sourceTree = "<group>"; };
-		F49FB6231E37CB15009A4170 /* featureAppsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = featureAppsController.swift; sourceTree = "<group>"; };
+		F4C589851E48F62800619A4F /* DetailMovieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailMovieViewController.swift; sourceTree = "<group>"; };
 		F4CE4C8C1E27B1B70017D7B5 /* One Night Movie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "One Night Movie.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4CE4C8F1E27B1B70017D7B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4CE4C911E27B1B70017D7B5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,13 +109,13 @@
 			children = (
 				F4CE4C8F1E27B1B70017D7B5 /* AppDelegate.swift */,
 				F4CE4C911E27B1B70017D7B5 /* ViewController.swift */,
+				F4C589851E48F62800619A4F /* DetailMovieViewController.swift */,
 				F4CE4C931E27B1B70017D7B5 /* Main.storyboard */,
 				F4CE4C961E27B1B70017D7B5 /* Assets.xcassets */,
 				F4CE4C981E27B1B70017D7B5 /* LaunchScreen.storyboard */,
 				F4CE4C9B1E27B1B70017D7B5 /* Info.plist */,
-				F49FB6211E379D47009A4170 /* GenresCell.swift */,
-				F49FB6231E37CB15009A4170 /* featureAppsController.swift */,
 				F4D4AEFF1E3FB33100353FDB /* Genres.swift */,
+				F4941D861E40A4BD00C3B8B0 /* Movies.swift */,
 			);
 			path = "One Night Movie";
 			sourceTree = "<group>";
@@ -251,9 +251,9 @@
 			files = (
 				F4CE4C921E27B1B70017D7B5 /* ViewController.swift in Sources */,
 				F4D4AF001E3FB33100353FDB /* Genres.swift in Sources */,
+				F4C589861E48F62800619A4F /* DetailMovieViewController.swift in Sources */,
+				F4941D871E40A4BD00C3B8B0 /* Movies.swift in Sources */,
 				F4CE4C901E27B1B70017D7B5 /* AppDelegate.swift in Sources */,
-				F49FB6241E37CB15009A4170 /* featureAppsController.swift in Sources */,
-				F49FB6221E379D47009A4170 /* GenresCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

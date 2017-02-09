@@ -10,5 +10,5 @@ target 'One Night Movie' do
   # Pods for One Night Movie
   pod 'Alamofire', '~> 4.3'
   pod 'SwiftyJSON'
-  pod 'PromiseKit', '~> 4.0'
+  pod 'AlamofireImage', '~> 3.2.0'
 end

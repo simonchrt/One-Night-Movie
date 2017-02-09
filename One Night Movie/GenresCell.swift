@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+class GenresCell: UICollectionViewCell, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+
+    
+    func setupView ()  {
+        
+    }
+    
+
+}

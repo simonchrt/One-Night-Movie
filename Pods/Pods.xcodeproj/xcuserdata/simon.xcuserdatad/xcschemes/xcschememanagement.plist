@@ -9,12 +9,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-One Night Movie.xcscheme</key>
+		<key>AlamofireImage.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>PromiseKit.xcscheme</key>
+		<key>Pods-One Night Movie.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -27,7 +27,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2B86480FCFCC00DCD1CC7AF62FF9CEDC</key>
+		<key>09C2CF20609F57F7B2548FD31C396D8A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -37,12 +37,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A9F483767BF09F93997A457B6FE7E37F</key>
+		<key>9EFE4C70245EE2857D336B8B9FA4E825</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D874C81FF8D582E55A58553892CE41CF</key>
+		<key>D2A3A220B458601C13EBC8FD1631DA3E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

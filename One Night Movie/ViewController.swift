@@ -15,6 +15,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     var genresList:[Genres] = []
     var moviesList:[Movies] = []
+    var testList:[String] = ["Action", "Adventure", "Romance", "Mistery", "Documentary", "Crime", "History", "Music", "Thriller", "Science Fiction", "War"]
     
     @IBOutlet weak var collectionViewGenres: UICollectionView!
     @IBOutlet weak var collectionViewMovies: UICollectionView!
@@ -112,10 +113,11 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
     
         if collectionView == self.collectionViewGenres {
-            return self.genresList.count
+//            return self.genresList.count
+            return self.testList.count
         }
         else {
-            print(self.moviesList)
+//            print(self.moviesList)
             return self.moviesList.count
         }
         
@@ -138,7 +140,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
 //            button.layer.borderColor = UIColor.white.cgColor
             
             
-            button.setTitle(genresList[indexPath.row].name, for: .normal)
+//            button.setTitle(genresList[indexPath.row].name, for: .normal)
+            button.setTitle(testList[indexPath.row], for: .normal)
             button.setTitleColor(UIColor.white, for: .normal)
             button.titleLabel?.font = UIFont(name: "circular", size: 18)
             

@@ -39,6 +39,9 @@ class DetailMovieViewController: UIViewController {
         exitButton.setTitle("exit", for: .normal)
         
         synopsis.isScrollEnabled = false
+        synopsis.text = movie?.synopsis
+        synopsis.isEditable = false
+        self.setSizeTextView(textView: synopsis)
         
         labelDateSortie.text = "Date de sortie :"
         labelRealisateur.text = "De :"
@@ -68,14 +71,13 @@ class DetailMovieViewController: UIViewController {
         
         
         
-        synopsis.text = movie?.synopsis
-        synopsis.isEditable = false
+ 
         
         image.af_setImage(withURL: URL(string :"https://image.tmdb.org/t/p/w300" + (movie?.image)!)!)
         poster.af_setImage(withURL: URL(string :"https://image.tmdb.org/t/p/w300" + (movie?.poster)!)!)
         
         
-        self.setSizeTextView(textView: synopsis)
+        
         
         
         

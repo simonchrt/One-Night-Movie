@@ -24,4 +24,5 @@ class Genres {
         self.id = id
     }
     
+
 }

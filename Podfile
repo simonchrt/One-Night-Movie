@@ -11,4 +11,5 @@ target 'One Night Movie' do
   pod 'Alamofire', '~> 4.3'
   pod 'SwiftyJSON'
   pod 'AlamofireImage', '~> 3.2.0'
+  pod 'YouTubePlayer'
 end

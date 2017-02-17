@@ -20,8 +20,10 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     @IBOutlet weak var collectionViewGenres: UICollectionView!
     @IBOutlet weak var collectionViewMovies: UICollectionView!
 
-    var url:String = "http://a89627aa.ngrok.io/movie"
-    
+    var url:String = "http://one-night-movie.antoinemoreaux.fr:3000/movie"
+    var mainStoryboard: UIStoryboard?
+
+
     @IBOutlet weak var moviesButton: UIButton!
 
     
@@ -32,7 +34,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         // ==================== Requétes alamofire Genres =======================
         
-        Alamofire.request(url+"/genrestmd/all", method: .get)
+        request(url+"/genrestmd/all", method: .get)
             .validate()
             .responseJSON { (response) in
                 if response.result.isSuccess {
@@ -79,8 +81,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         
         
-        
-        self.collectionViewGenres.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cellGenres")
         collectionViewGenres.backgroundColor = UIColor.clear
         
         if let layout = collectionViewGenres.collectionViewLayout as? UICollectionViewFlowLayout {
@@ -90,12 +90,14 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         collectionViewGenres.delegate = self
         collectionViewGenres.dataSource = self
         
+        mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+
         collectionViewMovies.delegate = self
         collectionViewMovies.dataSource = self
         
         
         
-        self.collectionViewMovies.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cellMovies")
+//        self.collectionViewMovies.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cellMovies")
         collectionViewMovies.backgroundColor = UIColor.clear
         
         if let layout = collectionViewMovies.collectionViewLayout as? UICollectionViewFlowLayout {
@@ -113,8 +115,9 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
     
         if collectionView == self.collectionViewGenres {
-//            return self.genresList.count
-            return self.testList.count
+            return self.genresList.count
+            
+//            return self.testList.count
         }
         else {
 //            print(self.moviesList)
@@ -132,25 +135,24 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             
 
             
-            let cellGenres = collectionViewGenres.dequeueReusableCell(withReuseIdentifier: "cellGenres", for: indexPath)
-            
-            let button = UIButton(frame: CGRect(x: 0, y: 0, width: cellGenres.bounds.size.width , height: cellGenres.bounds.size.height ))
-//            button.layer.cornerRadius = 10
-//            button.layer.borderWidth = 1
-//            button.layer.borderColor = UIColor.white.cgColor
-            
-            
-//            button.setTitle(genresList[indexPath.row].name, for: .normal)
-            button.setTitle(testList[indexPath.row], for: .normal)
-            button.setTitleColor(UIColor.white, for: .normal)
-            button.titleLabel?.font = UIFont(name: "circular", size: 18)
-            
-            cellGenres.addSubview(button)
-            
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellGenres", for: indexPath) as! CollectionViewCellGenres
+
+            cell.buttonGenres.frame = CGRect(x: 0, y: 0, width: cell.bounds.size.width , height: cell.bounds.size.height)
 
             
-            return cellGenres
             
+            cell.buttonGenres.setTitle(genresList[indexPath.row].name, for: .normal)
+            cell.buttonGenres.setTitleColor(UIColor.white, for: .normal)
+            cell.buttonGenres.titleLabel?.font = UIFont(name: "circular", size: 18)
+            
+            self.setSizeButton(button: cell.buttonGenres)
+//            self.setSizeButton(button: cell)
+            
+            cell.buttonGenres.layer.cornerRadius = 10
+            cell.buttonGenres.layer.borderWidth = 1
+            cell.buttonGenres.layer.borderColor = UIColor.white.cgColor
+            
+            return cell
         }
         
 //          ==================================  CollectionvViewMovies =========================================================
@@ -158,38 +160,39 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         else{
         
             
-            let cellMovies = collectionViewMovies.dequeueReusableCell(withReuseIdentifier: "cellMovies", for: indexPath)
+            let cellMovies = collectionViewMovies.dequeueReusableCell(withReuseIdentifier: "cellMovies", for: indexPath) as! CollectionViewCellMovies
             
             cellMovies.backgroundColor = UIColor.white
             cellMovies.bounds.size.width = 311
             cellMovies.bounds.size.height = 385
             cellMovies.layer.cornerRadius = 10
+
             
-            let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: cellMovies.bounds.size.width, height: 233))
-            let posterView = UIImageView(frame: CGRect(x: 16, y: 136, width: 90, height: 135))
-            let label = UILabel(frame: CGRect(x: 122, y: 163, width: 189, height: 29))
-            let synopsis = UITextView(frame: CGRect(x: 16, y: 283, width: 279, height: 81))
+            cellMovies.labelMovie.text = moviesList[indexPath.row].name
+            cellMovies.labelMovie.font = UIFont(name: "circular", size: 23)
+            cellMovies.labelMovie.textColor = UIColor.white
+            cellMovies.labelMovie.backgroundColor = UIColor.clear
+            cellMovies.labelMovie.isEditable = false
             
-            label.text = moviesList[indexPath.row].name
-            label.font = UIFont(name: "circular", size: 23)
-            label.textColor = UIColor.white
+            cellMovies.layer.shadowOpacity = 0.4
+            cellMovies.layer.shadowOffset = CGSize(width: 3, height: 3)
+
             
-            synopsis.text = moviesList[indexPath.row].synopsis
-            synopsis.isEditable = false
-            
-            imageView.af_setImage(withURL: URL(string :"https://image.tmdb.org/t/p/w300" + moviesList[indexPath.row].image)!)
-            
-            
-           
+            cellMovies.synopsis.text = moviesList[indexPath.row].synopsis
+            cellMovies.synopsis.isEditable = false
+//
+            cellMovies.imageMovies.af_setImage(withURL: URL(string :"https://image.tmdb.org/t/p/w300" + moviesList[indexPath.row].image)!)
+//
+//            print(moviesList[indexPath.row].genres)
 //            imageView.isUserInteractionEnabled = true
 //           imageView.addGestureRecognizer(tapGestureRecognizer)
             
-            posterView.af_setImage(withURL: URL(string :"https://image.tmdb.org/t/p/w300" + moviesList[indexPath.row].poster)!)
+            cellMovies.imagePoster.af_setImage(withURL: URL(string :"https://image.tmdb.org/t/p/w300" + moviesList[indexPath.row].poster)!)
             
-            cellMovies.addSubview(imageView)
-            cellMovies.addSubview(posterView)
-            cellMovies.addSubview(label)
-            cellMovies.addSubview(synopsis)
+//            cellMovies.addSubview(imageView)
+//            cellMovies.addSubview(posterView)
+//            cellMovies.addSubview(label)
+//            cellMovies.addSubview(synopsis)
             
 
             
@@ -208,9 +211,13 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
 //            let spaceBetweenCells: CGFloat = 10
 //            let dim = (collectionView.bounds.width - (cellsAcross - 1) * spaceBetweenCells) / cellsAcross
 //            return CGSize(width: dim, height: dim)
-        return CGSize(width: 120, height: collectionView.frame.height)
-
-        }
+        return CGSize(width: 130, height: collectionView.frame.height)
+        
+//        let spaceBetweenCells = 12
+//        let width = (Int(collectionView.frame.size.width) - spaceBetweenCells * 3) / 3
+//        return CGSize(width: width, height: Int(collectionView.frame.height))
+     }
+        
 //        
        else {
 //            let cellsAcross: CGFloat = 1
@@ -229,12 +236,24 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if let cell = collectionViewMovies.cellForItem(at: indexPath) {
-            performSegue(withIdentifier: "showDetails", sender: cell)
+        if collectionViewMovies.cellForItem(at: indexPath) != nil {
+//            performSegue(withIdentifier: "showDetails", sender: cell)
+            let secondVC = mainStoryboard?.instantiateViewController(withIdentifier: "moviesID") as! DetailMovieViewController
+            secondVC.movie = self.moviesList[indexPath.row]
+            present(secondVC, animated: true, completion: nil)
             
         } else {
             // Error indexPath is not on screen: this should never happen.
         }
+    }
+    
+    func didSeletec(cell: CollectionViewCellMovies, indexPath: IndexPath) {
+        
+        let secondVC = mainStoryboard?.instantiateViewController(withIdentifier: "moviesID") as! DetailMovieViewController
+        secondVC.movie = self.moviesList[indexPath.row]
+        present(secondVC, animated: true, completion: nil)
+        
+        
     }
 
     
@@ -278,6 +297,16 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
 //    
 //    
 //    
+    
+    func setSizeButton(button:UIView)
+    {
+        let fixedWidth = button.frame.size.width
+        button.sizeThatFits(CGSize(width: fixedWidth, height: CGFloat.greatestFiniteMagnitude))
+        let newSize = button.sizeThatFits(CGSize(width: fixedWidth, height: CGFloat.greatestFiniteMagnitude))
+        var newFrame = button.frame
+        newFrame.size = CGSize(width: max(newSize.width, fixedWidth), height: newSize.height)
+        button.frame = newFrame;
+    }
     
     func getSizeOfString(myString:String) -> CGSize {
         var sizeOfString = CGSize()

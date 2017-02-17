@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4B7AB086862E7BE36857745A /* Pods_One_Night_Movie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD1B3EB1361FE23FC8B0796C /* Pods_One_Night_Movie.framework */; };
+		F41F92481E51D77800B4B57E /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41F92471E51D77800B4B57E /* CollectionViewCell.swift */; };
+		F44806DF1E525E3B00328097 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44806DE1E525E3B00328097 /* TestViewController.swift */; };
 		F4941D871E40A4BD00C3B8B0 /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4941D861E40A4BD00C3B8B0 /* Movies.swift */; };
 		F49FB6181E3290D8009A4170 /* lineto-circular-pro-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F49FB6131E3290D8009A4170 /* lineto-circular-pro-bold.ttf */; };
 		F49FB6191E3290D8009A4170 /* lineto-circular-pro-book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F49FB6141E3290D8009A4170 /* lineto-circular-pro-book.ttf */; };
@@ -21,12 +23,15 @@
 		F4CE4C971E27B1B70017D7B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4CE4C961E27B1B70017D7B5 /* Assets.xcassets */; };
 		F4CE4C9A1E27B1B70017D7B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4CE4C981E27B1B70017D7B5 /* LaunchScreen.storyboard */; };
 		F4D4AF001E3FB33100353FDB /* Genres.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D4AEFF1E3FB33100353FDB /* Genres.swift */; };
+		F4DBDF421E55F5C00069E585 /* Personnes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DBDF411E55F5C00069E585 /* Personnes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		945C57F0AFB2030F8C700592 /* Pods-One Night Movie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-One Night Movie.release.xcconfig"; path = "Pods/Target Support Files/Pods-One Night Movie/Pods-One Night Movie.release.xcconfig"; sourceTree = "<group>"; };
 		AD1B3EB1361FE23FC8B0796C /* Pods_One_Night_Movie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_One_Night_Movie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC5AD5F925CEAB29E575570A /* Pods-One Night Movie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-One Night Movie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-One Night Movie/Pods-One Night Movie.debug.xcconfig"; sourceTree = "<group>"; };
+		F41F92471E51D77800B4B57E /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		F44806DE1E525E3B00328097 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		F4941D861E40A4BD00C3B8B0 /* Movies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
 		F49FB6131E3290D8009A4170 /* lineto-circular-pro-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "lineto-circular-pro-bold.ttf"; path = "../../Desktop/lineto-circular-pro-bold.ttf"; sourceTree = "<group>"; };
 		F49FB6141E3290D8009A4170 /* lineto-circular-pro-book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "lineto-circular-pro-book.ttf"; path = "../../Desktop/lineto-circular-pro-book.ttf"; sourceTree = "<group>"; };
@@ -42,6 +47,7 @@
 		F4CE4C991E27B1B70017D7B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4CE4C9B1E27B1B70017D7B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4D4AEFF1E3FB33100353FDB /* Genres.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Genres.swift; sourceTree = "<group>"; };
+		F4DBDF411E55F5C00069E585 /* Personnes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Personnes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,12 +89,12 @@
 				F49FB6171E3290D8009A4170 /* lineto-circular-pro-mediumItalic.ttf */,
 			);
 			name = Ressources;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		F4CE4C831E27B1B70017D7B5 = {
 			isa = PBXGroup;
 			children = (
-				F49FB6121E32901C009A4170 /* Ressources */,
 				F4CE4C8E1E27B1B70017D7B5 /* One Night Movie */,
 				F4CE4C8D1E27B1B70017D7B5 /* Products */,
 				94BE76E20433104038D15E26 /* Pods */,
@@ -107,15 +113,19 @@
 		F4CE4C8E1E27B1B70017D7B5 /* One Night Movie */ = {
 			isa = PBXGroup;
 			children = (
+				F49FB6121E32901C009A4170 /* Ressources */,
 				F4CE4C8F1E27B1B70017D7B5 /* AppDelegate.swift */,
 				F4CE4C911E27B1B70017D7B5 /* ViewController.swift */,
 				F4C589851E48F62800619A4F /* DetailMovieViewController.swift */,
+				F44806DE1E525E3B00328097 /* TestViewController.swift */,
 				F4CE4C931E27B1B70017D7B5 /* Main.storyboard */,
 				F4CE4C961E27B1B70017D7B5 /* Assets.xcassets */,
 				F4CE4C981E27B1B70017D7B5 /* LaunchScreen.storyboard */,
 				F4CE4C9B1E27B1B70017D7B5 /* Info.plist */,
 				F4D4AEFF1E3FB33100353FDB /* Genres.swift */,
 				F4941D861E40A4BD00C3B8B0 /* Movies.swift */,
+				F41F92471E51D77800B4B57E /* CollectionViewCell.swift */,
+				F4DBDF411E55F5C00069E585 /* Personnes.swift */,
 			);
 			path = "One Night Movie";
 			sourceTree = "<group>";
@@ -249,11 +259,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F44806DF1E525E3B00328097 /* TestViewController.swift in Sources */,
 				F4CE4C921E27B1B70017D7B5 /* ViewController.swift in Sources */,
 				F4D4AF001E3FB33100353FDB /* Genres.swift in Sources */,
+				F41F92481E51D77800B4B57E /* CollectionViewCell.swift in Sources */,
 				F4C589861E48F62800619A4F /* DetailMovieViewController.swift in Sources */,
 				F4941D871E40A4BD00C3B8B0 /* Movies.swift in Sources */,
 				F4CE4C901E27B1B70017D7B5 /* AppDelegate.swift in Sources */,
+				F4DBDF421E55F5C00069E585 /* Personnes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
